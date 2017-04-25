@@ -1,0 +1,174 @@
+%! TEX program = lualatex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill progress bars
+\newcommand\skills{
+	\vspace{3mm}
+	\profilesection{Skills}{6cm-\widthof{Skills}}
+	\vspace{3mm}
+	\\
+	\smartdiagram[bubble diagram]{
+		\textbf{PHP}\\\textbf{JAVA},
+		\textbf{JQuery}\\\textbf{Javascript},
+		\textbf{Sql Server}\\\textbf{MySQL},
+		\textbf{WordPress}\\\textbf{PrestaShop},
+		\textbf{webControl}\\\textbf{Drupal},
+		\textbf{Bootstrap}\\\textbf{Css},
+		\textbf{Html5}\\\textbf{Responsive}
+	}
+}
+
+\interests{Languages}{{English/4},{Spanish/6}}
+
+\projects{Projects}{
+	{\href{https://www.farmaciacuadrado.es/es/}{\textbf{Farmacia Cuadrado}}. First online pharma in Asturias to achieve the authorization to shell online.},
+	{\href{http://www.ecomuseominero.es/}{\textbf{Ecomuseo Minero}}. Gestión de reservas para el Ecomuseo Minero Valle de Samuño.},
+	{\href{http://www.cizerodigital.com/es/}{\textbf{Cizero digital}}. Impresión digital a medida.}
+}
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{img/foto2.jpg} %path of profile pic
+\cvname{Pablo Corsino} % Your name
+%\cvjobtitle{Desarrollador Web} % Job title/career
+\cvlinkedin{https://www.linkedin.com/in/corsino}
+\cvnumberphone{+34 652 53 75 99} % Phone number
+% \cvsite{} % Personal website
+\cvmail{pbl.corsino@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+\section{Perfil profesional}
+Profesional con más de 10 años de experiencia en el desarrollo de proyectos tecnológicos.
+
+Actualmente buscando nuevas oportunidades para desarrollar mi carrera y afrontar nuevos retos apasionantes.
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+	{Feb 2013 -}
+	{Current}
+	{Responsable del área de desarrollo web}
+	{Marketing and advertisement}
+	{\href{http://www.thinkabit.es/}{Thinkabit}}
+	{
+
+		\textbf{Responsabilidades:}
+		\begin{itemize}
+			\item Gestión de equipos de trabajo
+			\item Análisis de proyectos
+				%			\item Definición de arquitectura de proyectos
+			\item Toma de requisitos
+				%			\item Trato con el cliente final
+			\item Gestión de incidencias
+			\item Preparación de informes de resultados
+		\end{itemize}
+
+		\textbf{Logros:}
+		\begin{itemize}
+			\item Estandarización del proceso de desarrollo para que cada área trabaje de forma independiente.
+			\item Integración de nuestras tiendas con \href{http://salesmanago.com/}{Sales Manago} para obtener la información del proceso de compra: Clientes, puntos fidelidad, mailings, embudos de conversión, etc.
+		\end{itemize}
+	}
+	\\
+	\twentyitem
+	{Jan 2012 -}
+	{Feb 2013}
+	{Responsable del área de desarrollo web}
+	{Marketing and advertisement}
+	{\href{http://www.eteria.es}{Eteria marketing y comunicación}}
+	{
+
+		\textbf{Responsabilidades:}
+		\begin{itemize}
+			\item Gestión de equipos de trabajo
+			\item Análisis de proyectos
+			\item Formador
+		\end{itemize}
+
+		\textbf{Logros:}
+		\begin{itemize}
+			\item Creación de un equipo de trabajo para una nueva área de desarrollo web. Realizando las formaciones necesarias para que los diseñadores de papel pudieran dar el salto al entorno web.
+			\item Premio CREAsturias 2013 {\includegraphics[scale=0.05]{img/trophy.png}}
+				en la categoría web por la tienda online de Cafento, \href{https://www.cafentoshop.com/}{CafentoShop}
+		\end{itemize}
+	}
+	\\
+	\twentyitem
+	{Jan 2007 -}
+	{Jan 2012}
+	{Senior programmer}
+	{Servicios y tecnologías de la información}
+	{\href{http://www.intermarktecnologias.com/}{Intermark tecnologías}}
+	{
+
+		\textbf{Responsabilidades:}
+		\begin{itemize}
+			\item Desarrollo de aplicaciones
+			\item Gestión de bases de datos
+			\item Publicación en el entorno final
+		\end{itemize}
+
+		\textbf{Logros:}
+		\begin{itemize}
+			\item Evolución del gestor de contenidos de Intermark tecnologías (\href{http://www.webcontrol.es/es/}{webControl}) para añadir las funcionalidades esperadas en los cms modernos: html5, utf8, responsive, etc.
+		\end{itemize}
+	}
+	\\
+	\twentyitem
+	{Jan 2003 -}
+	{Jan 2007}
+	{Programmer}
+	{Servicios y tecnologías de la información}
+	{\href{http://www.danasoftware.com/}{Dana Software}}
+	{
+
+		\textbf{Responsabilidades:}
+		\begin{itemize}
+			\item Desarrollo de aplicaciones web
+		\end{itemize}
+
+		\textbf{Logros:}
+		\begin{itemize}
+			\item Diseño de un sistema distribuido para que los anunciantes puedan consultar online los anuncios publicados en cualquiera de los periódicos del \href{http://www.epi.es/}{grupo EPI} (Editorial Prensa Ibérica)
+		\end{itemize}
+	}
+
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+\end{document}
