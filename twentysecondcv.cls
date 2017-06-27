@@ -128,6 +128,7 @@
 % Define custom commands for CV info
 \newcommand{\cvdate}[1]{\renewcommand{\cvdate}{#1}}
 \newcommand{\cvlinkedin}[1]{\renewcommand{\cvlinkedin}{#1}}
+\newcommand{\cvgithub}[1]{\renewcommand{\cvgithub}{#1}}
 \newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
 \newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
@@ -208,6 +209,13 @@
 						{\href{\cvlinkedin}{\includegraphics[scale=0.04]{img/LinkedIn_Logo.png}}}
 					\end{array}
 				$} & \href{\cvlinkedin}{\hspace{16mm}/in/corsino} \\
+			}
+			\ifthenelse{\equal{\cvgithub}{}}{}{
+				{$
+					\begin{array}{l}
+						{\href{\cvgithub}{\includegraphics[scale=0.07]{img/GitHub_Logo.png}}}
+					\end{array}
+				$} & \href{\cvgithub}{\hspace{9mm}/PblCorsino} \\
 			}
 			\ifthenelse{\equal{\cvnumberphone}{}}{}{
 				{$
