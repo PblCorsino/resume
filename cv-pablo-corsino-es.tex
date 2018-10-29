@@ -17,72 +17,93 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
+
+% ----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+% ----------------------------------------------------------------------------------------
 
 \documentclass[letterpaper]{twentysecondcv} % a4paper for A4
 
 % Command for printing skill progress bars
 \newcommand\skills{
-	\vspace{3mm}
-	\profilesection{Competencias}{6cm-\widthof{Competencias}}
-	\vspace{3mm}
-	\\
-	\smartdiagram[bubble diagram]{
-		\textbf{PHP}\\\textbf{JAVA},
-		\textbf{JQuery}\\\textbf{Javascript},
-		\textbf{Sql Server}\\\textbf{MySQL},
-		\textbf{WordPress}\\\textbf{PrestaShop},
-		\textbf{webControl}\\\textbf{Drupal},
-		\textbf{Bootstrap}\\\textbf{Css},
-		\textbf{Html5}\\\textbf{Responsive}
-	}
+  \vspace{3mm}
+  \profilesection{Competencias}{6cm-\widthof{Competencias}}
+  \vspace{3mm}
+  \\
+  \smartdiagram[bubble diagram]{
+    \textbf{PHP}\\\textbf{JAVA},
+    \textbf{JQuery}\\\textbf{Javascript},
+    \textbf{Sql Server}\\\textbf{MySQL},
+    \textbf{WordPress}\\\textbf{PrestaShop},
+    \textbf{webControl}\\\textbf{Drupal},
+    \textbf{Bootstrap}\\\textbf{Css},
+    \textbf{Html5}\\\textbf{Responsive}
+  }
 }
 
-\interests{Idiomas}
-{{Inglés/4},{Español/6}}
+\interests{Idiomas}{{Inglés/4},{Español/6}}
 
-\projects{Proyectos}
-{{\href{https://www.farmaciacuadrado.es/es/}{\textbf{Farmacia Cuadrado}}. Primera farmacia online en Asturias en recibir la autorización para la venta de medicamentos online.},
-	{\href{http://www.ecomuseominero.es/}{\textbf{Ecomuseo Minero}}. Gestión de reservas para el Ecomuseo Minero Valle de Samuño.},
-	{\href{http://www.cizerodigital.com/es/}{\textbf{Cizero digital}}. Impresión digital a medida.}
+\projects{Proyectos}{
+  {\href{https://www.productosdeasturias.com}{\textbf{Productos de Asturias}}
+    Tienda online de Crivencar.},
+  {\href{https://www.farmaciacuadrado.es/es/}{\textbf{Farmacia Cuadrado}}. Primera farmacia online en Asturias en recibir la autorización para la venta de medicamentos online.},
+  {\href{http://www.cizerodigital.com/es/}{\textbf{Cizero digital}}. Impresión digital a medida.}
 }
-%----------------------------------------------------------------------------------------
-%	 PERSONAL INFORMATION
-%----------------------------------------------------------------------------------------
+% ----------------------------------------------------------------------------------------
+% PERSONAL INFORMATION
+% ----------------------------------------------------------------------------------------
 
 % If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
 
 \profilepic{img/foto2.jpg} %path of profile pic
 \cvname{Pablo Corsino} % Your name
-%\cvjobtitle{Desarrollador Web} % Job title/career
+% \cvjobtitle{Desarrollador Web} % Job title/career
 \cvlinkedin{https://www.linkedin.com/in/corsino}
+\cvgithub{https://github.com/PblCorsino}
 \cvnumberphone{652 53 75 99} % Phone number
 % \cvsite{} % Personal website
 \cvmail{pbl.corsino@gmail.com} % Email address
 
-%----------------------------------------------------------------------------------------
+% ----------------------------------------------------------------------------------------
 
 \begin{document}
 
-\makeprofile% Print the sidebar
+\makeprofile % Print the sidebar
 
 \section{Perfil profesional}
 Profesional con más de 10 años de experiencia en el desarrollo de proyectos tecnológicos.
 
-Actualmente buscando nuevas oportunidades para desarrollar mi carrera y afrontar nuevos retos apasionantes.
-
-%----------------------------------------------------------------------------------------
-%	 EXPERIENCE
-%----------------------------------------------------------------------------------------
+Actualmente enfocado al desarrollo de producto en una aplicación multidispositivo.
+% ----------------------------------------------------------------------------------------
+% EXPERIENCE
+% ----------------------------------------------------------------------------------------
 
 \section{Experiencia profesional}
 
 \begin{twenty} % Environment for a list with descriptions
 	\twentyitem%
-	{Feb 2013 -}
+	{Ago 2017 -}
 	{Actualidad}
+	{Team Leader}
+	{Servicios y tecnologías de la información}
+	{\href{http://www.mobentis.com/}{Mobentis}}
+	{\\
+		\textbf{Responsabilidades:}
+		\begin{itemize}
+			\item Gestión de equipos de trabajo
+			\item Desarrollo de producto
+		\end{itemize}
+
+		\textbf{Logros:}
+		\begin{itemize}
+			\item Creación de un equipo de trabajo para un nuevo área de I+D
+			\item Desarrollo de un estandar para el producto de movilidad de la empresa.
+		\end{itemize}
+	}
+	\\
+    	\twentyitem%
+	{Feb 2013 -}
+	{Ago 2017}
 	{Responsable del área de desarrollo web}
 	{Marketing y publicidad}
 	{\href{http://www.thinkabit.es/}{Thinkabit}}
@@ -91,9 +112,9 @@ Actualmente buscando nuevas oportunidades para desarrollar mi carrera y afrontar
 		\begin{itemize}
 			\item Gestión de equipos de trabajo
 			\item Análisis de proyectos
-				%			\item Definición de arquitectura de proyectos
+			%\item Definición de arquitectura de proyectos
 			\item Toma de requisitos
-				%			\item Trato con el cliente final
+			%\item Trato con el cliente final
 			\item Gestión de incidencias
 			\item Preparación de informes de resultados
 		\end{itemize}
@@ -122,8 +143,7 @@ Actualmente buscando nuevas oportunidades para desarrollar mi carrera y afrontar
 		\textbf{Logros:}
 		\begin{itemize}
 			\item Creación de un equipo de trabajo para una nueva área de desarrollo web. Realizando las formaciones necesarias para que los diseñadores de papel pudieran dar el salto al entorno web.
-			\item Premio CREAsturias 2013 {\includegraphics[scale=0.05]{img/trophy.png}}
-				en la categoría web por la tienda online de Cafento, \href{https://www.cafentoshop.com/}{CafentoShop}
+			\item Premio CREAsturias 2013 {\includegraphics[scale=0.05]{img/trophy.png}} en la categoría web por la tienda online de Cafento, \href{https://www.cafentoshop.com/}{CafentoShop}
 		\end{itemize}
 	}
 	\\
@@ -146,31 +166,30 @@ Actualmente buscando nuevas oportunidades para desarrollar mi carrera y afrontar
 			\item Evolución del gestor de contenidos de Intermark tecnologías (\href{http://www.webcontrol.es/es/}{webControl}) para añadir las funcionalidades esperadas en los cms modernos: html5, utf8, responsive, etc.
 		\end{itemize}
 	}
-	\\
-	\twentyitem%
-	{Ene 2003 -}
-	{Ene 2007}
-	{Programador}
-	{Servicios y tecnologías de la información}
-	{\href{http://www.danasoftware.com/}{Dana Software}}
-	{\\
-		\textbf{Responsabilidades:}
-		\begin{itemize}
-			\item Desarrollo de aplicaciones web
-		\end{itemize}
-
-		\textbf{Logros:}
-		\begin{itemize}
-			\item Diseño de un sistema distribuido para que los anunciantes puedan consultar online los anuncios publicados en cualquiera de los periódicos del \href{http://www.epi.es/}{grupo EPI} (Editorial Prensa Ibérica)
-		\end{itemize}
-	}
+%	\\
+%	\twentyitem%
+%	{Ene 2003 -}
+%	{Ene 2007}
+%	{Programador}
+%	{Servicios y tecnologías de la información}
+%	{\href{http://www.danasoftware.com/}{Dana Software}}
+%	{\\
+%		\textbf{Responsabilidades:}
+%		\begin{itemize}
+%			\item Desarrollo de aplicaciones web
+%		\end{itemize}
+%		\textbf{Logros:}
+%		\begin{itemize}
+%			\item Diseño de un sistema distribuido para que los anunciantes puedan consultar online los anuncios publicados en cualquiera de los periódicos del \href{http://www.epi.es/}{grupo EPI} (Editorial Prensa Ibérica)
+%		\end{itemize}
+%	}
 
 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
 
 \end{document}
-%%% Local Variables: 
-%%% mode: latex 
+%%% Local Variables:
+%%% mode: latex
 %%% TeX-engine: luatex
-%%% TeX-master: t 
+%%% TeX-master: t
 %%% End:
